@@ -5,7 +5,7 @@ MEAL_TYPE = (
     ("starters", "Starters"),
     ("salads", "Salads"),
     ("sides", "Sides"),
-    ("main_dishes", "Main_Dishes"),
+    ("main_dishes", "Main Dishes"),
     ("desserts", "Desserts"),
     ("drinks", "Drinks"),
 )
