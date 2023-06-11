@@ -11,10 +11,19 @@
         <h1>{{ meal.1 }}</h1>
         <br>
         {% for row in item_list %}
-            <h2>{{ row.meal }}</h2>
-            <h3>{{ row.description }}</h3>
-             <p>price: {{ row.price }}</p>
-            <br>
+            {% if row.category == meal.0 %}
+                {% if row.status == 0 %}
+                    <h2><del>{{ row.meal }}</del>&nbsp<i>unavailable</i></h2>
+                    <h3>{{ row.description }}</h3>
+                     <p>price: {{ row.price }}</p>
+                    <br>
+                {% else %}
+                    <h2>{{ row.meal }}</h2>
+                    <h3>{{ row.description }}</h3>
+                     <p>price: {{ row.price }}</p>
+                    <br>
+                {% endif %}
+            {% endif %}
         {% endfor %}
     {% endfor %}
 </body>
