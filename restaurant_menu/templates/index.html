@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
     {% block content %}
-        <div class="container" style="background-color: #D6E5E3;">
-            <h1>Restaurant Menu</h1>
-            <ul class="list-group list-group-flush">
+        <div class="container rounded" style="background-color: #49111c;">
+            <h1 class="text-white">Restaurant Menu</h1>
+            <ul class="list-group list-group-flush rounded">
                 {% for meal in meals %}
                     <li class="list-group-item pt-0">
                         <h1 class="pt-5">{{ meal.1 }}</h1>
